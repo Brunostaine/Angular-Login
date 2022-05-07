@@ -1,0 +1,25 @@
+<div class="container">
+  <h2>Login</h2>
+
+  <div class="form-floating mb-3">
+    <input
+      [(ngModel)]="usuario.nome"
+      type="usuario"
+      class="form-control"
+      id="usuario"
+    />
+    <label for="usuario">Usuario</label>
+  </div>
+  <div class="form-floating">
+    <input
+      [(ngModel)]="usuario.senha"
+      type="password"
+      class="form-control"
+      id="senha"
+    />
+    <label for="senha">Senha</label>
+  </div>
+  <button class="btn btn-primary" type="submit" (click)="fazerLogin()">
+    Login
+  </button>
+</div>
